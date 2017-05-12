@@ -1,6 +1,6 @@
 {% set name = "larray" %}
-{% set version = "0.21" %}
-{% set sha256 = "ce42d25a1c7fea81f8c2783276adf87ecc88eb47a1365b2735099b3c0117420c" %}
+{% set version = "0.22" %}
+{% set sha256 = "f265cfcb875e8424d804ffe35fd0cac2da94beea0234b620c5f1f684fd6a006a" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,13 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
 
   run:
     - python
     - numpy >=1.10
     - pandas
+    - pytest-runner
 
 test:
   imports:
