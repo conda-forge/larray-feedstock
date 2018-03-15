@@ -1,7 +1,7 @@
 About larray
 ============
 
-Home: http://github.com/liam2/larray
+Home: http://github.com/larray-project/larray
 
 Package license: GPL-3.0
 
