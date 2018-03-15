@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/liam2/larray/archive/{{ version }}.tar.gz
+  url: https://github.com/larray-project/larray/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -32,7 +32,7 @@ test:
     - larray
 
 about:
-  home: http://github.com/liam2/larray
+  home: http://github.com/larray-project/larray
   license: GPL-3.0
   license_family: GPL
   license_file: COPYING
