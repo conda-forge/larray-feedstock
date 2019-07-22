@@ -14,14 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
     - python
-    - setuptools
-    - pytest-runner
 
   run:
     - python
@@ -38,7 +36,9 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: COPYING
-  summary: "Labeled N-dimensional array."
+  summary: "N-dimensional labelled arrays in Python"
+  doc_url: https://larray.readthedocs.io/
+  dev_url: https://github.com/larray-project/larray
 
 extra:
   recipe-maintainers:
