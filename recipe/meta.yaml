@@ -1,6 +1,6 @@
 {% set name = "larray" %}
-{% set version = "0.31" %}
-{% set sha256 = "8f27d08e19561ff1b318ebf1f3610d62b5d94eec279d667235f5f91d88b6cff9" %}
+{% set version = "0.32.1" %}
+{% set sha256 = "c2ee926e3c9926a1bb2f8f7a9ba83f7fc6942a0d82779fa021da440941ff3b89" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
