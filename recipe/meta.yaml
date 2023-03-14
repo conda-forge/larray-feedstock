@@ -1,4 +1,4 @@
-{% set version = "0.32.2" %}
+{% set version = "0.34" %}
 
 package:
   name: larray
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/larray-project/larray/archive/{{ version }}.tar.gz
-  sha256: af1b1f333dc9617e4b25bdf690f979d6eba81cccec62fbe6e0e3b661f60d593a
+  sha256: c2f09062556e28333f86b290063ac8646a006b1c516120207353b6c1fcd5c124
 
 build:
   noarch: python
