@@ -10,20 +10,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.22
     - pandas >=0.20
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - larray
 
