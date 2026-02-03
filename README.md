@@ -16,7 +16,6 @@ Documentation: https://larray.readthedocs.io/
 LArray is an open source Python library that aims to provide tools for
 easy exploration and manipulation of N-dimensional labelled data structures.
 
-
 Current build status
 ====================
 
